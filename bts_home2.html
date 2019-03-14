@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Webteen - Web Comic </title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bts_main.css">
+	<!-- <link rel="stylesheet" href="tools/animate.min.css"> -->
+	<script src="tools/js/jquery.min.js"></script>
+	<script src="tools/js/bootstrap.min.js"></script>
+	<!-- <script src="tools/js/angular.min.js"></script> -->
+	
+</head>
+<body>
+	<!-- <div id="mainbody"> -->
+		<div id="header">
+			<div class="header-link">
+				<img src="logo/logo_trs3.png">
+			</div>
+		</div>
+		<div id="topnav">
+				<ul>
+					<li><a href="#" id="wupdate">Weekly Updates</a></li>
+					<li><a href="#genrescroll" id="popcomic">Popular</a></li>
+					<li><a href="#romgenre" id="genrecomic">Genre</a></li>
+				</ul>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-12" style="background-color: lightblue;">
+					<div class="row">
+						<div class="col-md-8 col-xs-12">
+							<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+	  							<!-- Indicators -->
+	  							<ol class="carousel-indicators">
+	  							  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+	  							  <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+	  							  <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+	  							</ol>
+
+	  							<!-- Wrapper for slides -->
+	  							<div class="carousel-inner" role="listbox">
+	    							<div class="item active">
+	      								<img src="images/ads/bannerfinality.jpg" alt="bannerfinality.jpg">
+	      								<div class="carousel-caption">
+	        								gambar 1
+	      								</div>
+	    							</div>
+	    							<div class="item">
+	      								<img src="images/ads/bannerbrother.jpg" alt="bannerbrother.jpg">
+	      								<div class="carousel-caption">
+	        								gambar 2
+	      								</div>
+	    							</div>
+	    							<div class="item">
+	      								<img src="images/ads/bannercaster.jpg" alt="bannercaster.jpg">
+	      								<div class="carousel-caption">
+	        								gambar 3
+	     							 	</div>
+	    							</div>
+	  							</div>
+
+	  						<!-- Controls -->
+			  					<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			    					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			    					<span class="sr-only">Previous</span>
+			  					</a>
+			 					<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			    					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			   						<span class="sr-only">Next</span>
+			 					</a>
+	 						</div>
+						</div>
+						<div class="col-md-4 col-xs-12">
+							<div id="rank" style="background-color: lightgrey">
+								<div class="row">
+									<div class="col-md-12 col-xs-12">
+										<p id="comicrank">Comic's Rank :</p>
+									</div>
+									<!-- <div class="clear"></div> -->
+									<div class="col-md-12 col-xs-3">
+										<div class="col-xs-12 col-md-2" style="text-align: center">
+											<p id="nomorrank">1</p>
+										</div>
+										<div class="col-xs-12 col-md-3 gambar">
+											<img class="foto" style="width: 100%;" src="images/Webposter/8play.jpg">
+										</div>
+										<div class="col-xs-12 col-md-5">
+											<p class="namarank">Let's Play</p>
+										</div>
+									</div>
+									
+									<div class="clear"></div>
+									<div class="col-md-12 col-xs-3">
+										<div class="col-xs-12 col-md-2" style="text-align: center;">
+											<p id="nomorrank">2</p>
+										</div>
+										<div class="col-xs-12 col-md-3 gambar">
+											<img class="foto" style="width: 100%;" src="images/Webposter/7lore.jpg">
+										</div>
+										<div class="col-xs-12 col-md-5">
+											<p class="namarank">Lore Olympus</p>
+										</div>
+									</div>
+									
+									<div class="clear"></div> 
+									<div class="col-md-12 col-xs-3">
+										<div class="col-xs-12 col-md-2" style="text-align: center">
+											<p id="nomorrank">3</p>
+										</div>
+										<div class="col-xs-12 col-md-3 gambar">
+											<img class="foto" style="width: 100%;" src="images/Webposter/2murrz.jpg">
+										</div>
+										<div class="col-xs-12 col-md-5">
+											<p class="namarank">Murrz</p>
+										</div>
+										
+									</div>
+									
+									<div class="clear"></div> 
+									<div class="col-md-12 col-xs-3">
+										<div class="col-xs-12 col-md-2" style="text-align: center">
+											<p id="nomorrank">4</p>
+										</div>
+										<div class="col-xs-12 col-md-3 gambar">
+											<img class="foto" style="width: 100%;" src="images/Webposter/10holy.jpg">
+										</div>
+										<div class="col-xs-12 col-md-5">
+											<p class="namarank">Oh My Holy</p>
+										</div>
+									</div>
+								</div>
+									
+	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<!-- Akhir dari Ads Rank -->		
+			<div id="wupdatecomic">
+				<p id="rcm">Weekly Update</p>
+				<div class="row">
+					<div class="col-xs-12 col-md-2" id="sun-comic">
+						<div id="wupdate-list-sun">SUN</div>
+						<div id="wupdate-show-sun">
+							<ul>
+								<li><a href="#"><img src="images/Webposter/5denma.jpg"><p  id="wupdate-title">Denma</p></a>
+								<li><a href="#"><img src="images/Webposter/10holy.jpg"><p  id="wupdate-title">Oh My Holy</p></a>
+								</li>
+							</ul>
+						</div>
+					</div>	
+					<div class="col-xs-12 col-md-2" id="mon-comic">
+						<div id="wupdate-list-mon">MON</div>
+						<div id="wupdate-show-mon">
+							<ul>
+								<li><a href="#"><img src="images/Webposter/17udin.jpg"><p  id="wupdate-title">Si Udin</p></a></li>
+								<li><a href="#"><img src="images/Webposter/11truebeauty.jpg"><p  id="wupdate-title">True Beauty</p></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-2" id="tue-comic">
+						<div id="wupdate-list-tue">TUE</div>
+						<div id="wupdate-show-tue">
+							<ul>
+								<li><a href="#"><img src="images/Webposter/7lore.jpg"><p  id="wupdate-title">Lore</p></a></li>
+								<li><a href="#"><img src="images/Webposter/8play.jpg"><p  id="wupdate-title">Play</p></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-2" id="wed-comic">
+						<div id="wupdate-list-wed">WED</div>
+						<div id="wupdate-show-wed">
+							<ul>
+								<li><a href="#"><img src="images/Webposter/7lore.jpg"><p  id="wupdate-title">Lore</p></a></li>
+								<li><a href="#"><img src="images/Webposter/8play.jpg"><p  id="wupdate-title">Play</p></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-2" id="thu-comic">
+						<div id="wupdate-list-thu">TRU</div>
+						<div id="wupdate-show-thu">
+							<ul>
+								<li><a href="#"><img src="images/Webposter/7lore.jpg"><p  id="wupdate-title">Lore</p></a></li>
+								<li><a href="#"><img src="images/Webposter/8play.jpg"><p  id="wupdate-title">Play</p></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-2" id="fri-comic">
+						<div id="wupdate-list-fri">FRI</div>
+						<div id="wupdate-show-fri">
+							<ul>
+								<li><a href="#"><img src="images/Webposter/7lore.jpg"><p  id="wupdate-title">Lore</p></a></li>
+								<li><a href="#"><img src="images/Webposter/8play.jpg"><p  id="wupdate-title">Play</p></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-12 col-md-2" id="sat-comic">
+						<div id="wupdate-list-sat">SAT</div>
+						<div id="wupdate-show-sat">
+							<ul>
+								<li><a href="#"><img src="images/Webposter/7lore.jpg"><p  id="wupdate-title">Lore</p></a></li>
+								<li><a href="#"><img src="images/Webposter/8play.jpg"><p  id="wupdate-title">Play</p></a></li>
+							</ul>
+						</div>
+					</div>	
+				</div>
+				
+			</div>
+			<div class="recommendedcomic" id="genrescroll">
+				<p id="rcm">Popular Comics!</p>
+				<div id="rcmlist">
+					<ul>
+						<li><a href="#"><img src="images/rcm/4panellife.png"></a></li>
+						<li><a href="#"><img src="images/rcm/dice.png"></a></li>
+						<li><a href="#"><img src="images/rcm/cheeseinthetrap.png"></a></li>
+						<li><a href="#"><img src="images/rcm/killingstalking.png"></a></li>
+						<li><a href="#"><img src="images/rcm/owlturd.png"></a></li>
+						<li><a href="#"><img src="images/rcm/mini_avengers.png"></a></li>			
+					</ul>
+				</div>
+			</div>
+			<div class="genrelist" id="genre-list">
+				<p id="rcm">Genre</p>
+				<div id="romgenre">
+					<div class="row">
+						<div class="col-md-2 col-xs-12 genre-list-title"><p>ROMANCE</p></div>
+					
+						<div class="col-md-3 col-xs-12" >
+							<div class="genre-list-cover">
+								<img title="Age Matters" src="images/Webposter/1agematters.jpg">
+							</div>
+							<div class="genre-list-name" title="Age Matters"><p>Age Matters</p></div>
+						</div>
+						<div class="col-md-3 col-xs-12">
+							<div class="genre-list-cover">
+								<img title="My Giant Nerd Boyfriend" src="images/Webposter/6mygiant.jpg">
+							</div>
+							<div class="genre-list-name" title="My Giant Nerd Boyfriend"><p>My Giant..</p></div>
+						</div>
+						<div class="col-md-3 col-xs-12">
+							<div class="genre-list-cover">
+								<img title="True Beauty" src="images/Webposter/11truebeauty.jpg">
+							</div>
+							<div class="genre-list-name" title="True Beauty"><p>True Beauty</p></div>
+						</div>
+					</div>
+				</div>
+				<div id="solgenre">
+					<div class="row">
+						<div class="col-md-2 col-xs-12 genre-list-title"><p>DRAMA</p></div>
+					
+						<div class="col-md-3 col-xs-12" >
+							<div class="genre-list-cover">
+								<img title="Murrz" src="images/Webposter/2murrz.jpg">
+							</div>
+							<div class="genre-list-name" title="Murrz"><p>Murrz</p></div>
+						</div>
+						<div class="col-md-3 col-xs-12">
+							<div class="genre-list-cover">
+								<img title="Blue Chair" src="images/Webposter/3bluechair.jpg">
+							</div>
+							<div class=" genre-list-name" title="Blue Chair"><p>Blue Chair</p></div>
+						</div>
+						<div class="col-md-3 col-xs-12" >
+							<div class="genre-list-cover">
+								<img title="Eat Fighter" src="images/Webposter/4eatfighter.jpg">
+							</div>
+							<div class=" genre-list-name" title="Eat Fighter" ><p>Eat Fighter</p></div>
+						</div>
+					</div>
+				</div>
+				<div id="comgenre">
+					<div class="row">
+						<div class="col-md-2 col-xs-12 genre-list-title"><p>COMEDY</p></div>
+					
+						<div class="col-md-3 col-xs-12" >
+							<div class="genre-list-cover">
+								<img title="Si Ocong" src="images/Webposter/15pocong.jpg">
+							</div>
+							<div class="genre-list-name" title="Si Ocong"><p>Si Ocong</p></div>
+						</div>
+						<div class="col-md-3 col-xs-12">
+							<div class="genre-list-cover">
+								<img title="Kecoa dan Dendam" src="images/Webposter/16kdd.jpg">
+							</div>
+							<div class=" genre-list-name" title="Kecoa dan Dendam"><p>Kecoa dan..</p></div>
+						</div>
+						<div class="col-md-3 col-xs-12">
+							<div class="genre-list-cover">
+								<img title="Si Udin" src="images/Webposter/17udin.jpg">
+							</div>
+							<div class=" genre-list-name" title="Si Udin"><p>Si Udin</p></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<section id="blog">
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-md-12">
+		                    <div class="block">
+		                        <h1 class="heading">Featured Food</h1>
+		                        <ul>
+		                            <li class="wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="300ms">
+		                                <div class="blog-img">
+		                                    <img src="images/Webposter/17udin.jpg" alt="blog-img">
+		                                </div>
+		                                <div class="content-right">
+		                                    <h3>Homestyle Chicken Pot Pie</h3>
+		                                </div>
+		                            </li>
+		                            <li class="wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="400ms">
+		                                <div class="blog-img">
+		                                    <img src="images/Webposter/15pocong.jpg" alt="blog-img">
+		                                </div>
+		                                <div class="content-right">
+		                                    <h3>Homestyle Chicken Pot Pie</h3>                                    
+		                                </div>
+		                            </li>
+		                            <!-- <li class="wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="500ms">
+		                                <div class="content-left">
+		                                    <h3>Homestyle Chicken Pot Pie</h3>
+		                                    <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+		                                </div>
+		                                <div class="blog-img-2">
+		                                    <img src="images/blog/blog-img-3.jpg" alt="blog-img">
+		                                </div>
+		                            </li>
+		                            <li class="wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="600ms">
+		                                <div class="content-left">
+		                                    <h3>Homestyle Chicken Pot Pie</h3>
+		                                    <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+		                                </div>
+		                                <div class="blog-img-2">
+		                                    <img src="images/blog/blog-img-4.jpg" alt="blog-img">
+		                                </div>
+		                            </li> -->
+		                            <!-- <li class="wow fadeInLeft" data-wow-duration="300ms" data-wow-delay="700ms">
+		                                <div class="blog-img">
+		                                    <img src="images/blog/blog-img-5.jpg" alt="blog-img">
+		                                </div>
+		                                <div class="content-right">
+		                                    <h3>Homestyle Chicken Pot Pie</h3>
+		                                    <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+		                                </div>
+		                            </li>
+		                            <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="800ms">
+		                                <div class="blog-img">
+		                                    <img src="images/blog/blog-img-6.jpg" alt="blog-img">
+		                                </div>
+		                                <div class="content-right">
+		                                    <h3>Homestyle Chicken Pot Pie</h3>
+		                                    <p>Prepared in true New England fash-ion. Tender all-white meat chicken simmered...</p>
+		                                </div>
+		                            </li> -->
+		                        </ul>
+		                    </div>
+		                </div><!-- .col-md-12 close -->
+		            </div><!-- .row close -->
+		        </div><!-- .containe close -->
+		    </section>
+			<div id="footer">
+				
+			</div>
+		</div>
+</body>
+<script>
+window.onscroll = function() {myFunction()};
+
+var topnav = document.getElementById("topnav");
+var sticky = topnav.offsetTop;
+
+function myFunction() {
+	if (window.pageYOffset >= sticky) {
+    topnav.classList.add("sticky");
+ 	} else {
+    topnav.classList.remove("sticky");
+  	}
+}
+$(document).ready(function() {
+	hideall('all');
+
+	 $("#wupdate-list-sun").click(function() {
+	   hideall('sun');
+	   $("#wupdate-show-sun").toggle("slow");
+	 })
+
+ 	$("#wupdate-list-mon").click(function() {
+	   hideall('mon');
+	   $("#wupdate-show-mon").toggle("slow");
+	 })
+
+ 	$("#wupdate-list-tue").click(function() {
+	  hideall('tue');
+	  $("#wupdate-show-tue").toggle("slow");
+	})
+
+	$("#wupdate-list-wed").click(function() {
+	  hideall('wed');
+	  $("#wupdate-show-wed").toggle("slow");
+	})	 	
+	
+	$("#wupdate-list-thu").click(function() {
+	  hideall('thu');
+	  $("#wupdate-show-thu").toggle("slow");
+	})
+	
+	$("#wupdate-list-fri").click(function() {
+	  hideall('fri');
+	  $("#wupdate-show-fri").toggle("slow");
+	})
+
+	$("#wupdate-list-sat").click(function() {
+	  hideall('sat');
+	  $("#wupdate-show-sat").toggle("slow");
+	})
+});
+
+function hideall(caller){
+	// $("#wupdate-show-sun").hide();
+	// $("#wupdate-show-mon").hide();
+	// $("#wupdate-show-tue").hide();
+	// $("#wupdate-show-wed").hide();
+	// $("#wupdate-show-thu").hide();
+	// $("#wupdate-show-fri").hide();
+	// $("#wupdate-show-sat").hide();
+
+	if($("#wupdate-show-sun").css('display') == "block" && caller != 'sun'){ 
+		$("#wupdate-show-sun").toggle("slow");
+	}
+	if(	$("#wupdate-show-mon").css('display') == "block" && caller != 'mon'){
+		$("#wupdate-show-mon").toggle("slow");
+	}
+	if(	$("#wupdate-show-tue").css('display') == "block" && caller != 'tue'){
+		$("#wupdate-show-tue").toggle("slow");
+	}
+	if(	$("#wupdate-show-wed").css('display') == "block" && caller != 'wed'){
+		$("#wupdate-show-wed").toggle("slow");
+	}
+	if(	$("#wupdate-show-thu").css('display') == "block" && caller != 'thu'){
+		$("#wupdate-show-thu").toggle("slow");
+	}
+	if(	$("#wupdate-show-fri").css('display') == "block" && caller != 'fri'){
+		$("#wupdate-show-fri").toggle("slow");
+	}
+	if(	$("#wupdate-show-sat").css('display') == "block" && caller != 'sat'){
+		$("#wupdate-show-sat").toggle("slow");
+	}
+}
+
+$('.carousel[data-type="multi"] .item').each(function() {
+	var next = $(this).next();
+	if (!next.length) {
+		next = $(this).siblings(':first');
+	}
+	next.children(':first-child').clone().appendTo($(this));
+
+	for (var i = 0; i < 2; i++) {
+		next = next.next();
+		if (!next.length) {
+			next = $(this).siblings(':first');
+		}
+
+		next.children(':first-child').clone().appendTo($(this));
+	}
+});
+
+
+</script>
+</html>

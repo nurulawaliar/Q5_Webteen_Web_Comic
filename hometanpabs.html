@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Webteen - Web Comic </title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="w31063.css" rel="stylesheet" type="text/css">
+	<script src="jquery.min.js"></script>
+	<script src="angular.min.js"></script>
+</head>
+<body>
+	<div id="mainbody">
+		<header id="header">
+			<div id="logo"><img src="logo_trs.png"></div>
+			<div class="header-link">
+				<ul id="left-link">
+					<li><a class="mainlink" href="home.html" title="Find 'your' comic now!">Webteen</a><br><i>NO Comics NO Life !</i></li>
+				</ul>
+			</div>
+		</header>
+		<div id="topnav">
+			<nav>
+				<img src="logo1.png">
+				<ul>
+					<li><a href="#" id="wupdate">Weekly Updates</a></li>
+					<li><a href="#genrescroll" id="popcomic">Popular</a></li>
+					<li><a href="#romgenre" id="genrecomic">Genre</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="maincontent">
+			<div class="ads_rank">
+				<div id="ads">
+					<div><a href="#"><img src="Webposter/bannereatfighter.jpg"></a></div>
+					<div><a href="#"><img src="Webposter/bannercaster.jpg"></a></div>
+					<div><a href="#"><img src="Webposter/bannerrefundhigh.jpg"></a></div>
+					<div><a href="#"><img src="Webposter/bannerfinality.jpg"></a></div>
+					<div><a href="#"><img src="Webposter/bannerbrother.jpg"></a></div>
+				</div>
+				<div id="rank">
+					<table class="table_rank" border="0">
+						<tr><td id="ranktl" colspan="2" style="font-size: 20px; color: black; padding-left: 50px;padding-top: 10px;padding-bottom: 20px; font-family: Haettenschweiler ">Comic's Rank :</td></tr>
+						<tr class="number2">
+							<td id="number">1</td>
+							<td><a href="#"><img src="Webposter/8play.jpg"></a></td>
+							<td><a href="#"><p style="margin-left: -80px;">Let's Play</p></a></td>
+						</tr>
+						<tr class="number2">
+							<td id="number">2</td>
+							<td><a href="#"><img src="Webposter/7lore.jpg"></a></td>
+							<td><a href="#"><p style="margin-left: -80px;">Lore Olympus</p></a></td>
+						</tr>
+						<tr class="number2">
+							<td id="number">3</td>
+							<td><a href="#"><img src="Webposter/2murrz.jpg"></a></td>
+							<td><a href="#"><p style="margin-left: -80px;">Murrz</p></a></td>
+						</tr>
+					</table>
+					<!-- <table class="table_rank1" border="0">
+						<tr class="number1">
+							<td id="number">1</td>
+							<td><a href="#"><img src="Webposter/8play.jpg"></a></td>
+							<td><a href="#"><p style="margin-left: -80px;">Let's Play</p></a></td>
+						</tr>
+						<tr class="number1">
+							<td id="number">2</td>
+							<td><a href="#"><img src="Webposter/7lore.jpg"></a></td>
+							<td><a href="#"><p style="margin-left: -80px;">Lore Olympus</p></a></td>
+						</tr>
+						<tr class="number1">
+							<td id="number">3</td>
+							<td><a href="#"><img src="Webposter/2murrz.jpg"></a></td>
+							<td><a href="#"><p style="margin-left: -80px;">Murrz</p></a></td>
+						</tr>						
+					</table>			 -->	
+				</div>
+			</div>			
+			<div class="recommendedcomic" id="genrescroll">
+				<p id="rcm">Popular Comics!</p>
+				<div id="rcmlist">
+					<ul>
+						<li><a href="#"><img src="rcm/4panellife.png"></a></li>
+						<li><a href="#"><img src="rcm/dice.png"></a></li>
+						<li><a href="#"><img src="rcm/cheeseinthetrap.png"></a></li>
+						<li><a href="#"><img src="rcm/killingstalking.png"></a></li>
+						<li><a href="#"><img src="rcm/owlturd.png"></a></li>
+						<li><a href="#"><img src="rcm/mini_avengers.png"></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="genrelist" id="genre-list">
+				<p id="rcm">Genre</p>
+				<div id="romgenre" >
+					<div class="inner-kiri">
+					<table class="tabble-genre" border="0">
+						<tr>
+							<td colspan="2" style="font-size: 18px; color: red; text-align: left; padding-left: 100px; padding-bottom: 0px; padding-top: 10px;">Romance</td>
+						</tr>
+						<tr class="comic-selected" onClick="window.location='home.html'" style="cursor: pointer;" >
+							<td width="40%"><img alt="sample" src="Webposter/1agematters.jpg" style="width: 70px; width: 70px; padding: 0px; border: 1px lightgray solid"></td>
+							<td style="font-family: verdana; text-align: left; font-size: 18px; padding-left: 20px; border-bottom: 1px lightgray solid">Age Matters<p style="margin-left: 20px; font-size: 14px" ><i>Taehyung Kim</i></p></td>
+						</tr>
+						<tr class="comic-selected" onClick="window.location='mygiant.html'" style="cursor: pointer;" >
+							<td width="40%"><img alt="sample" src="Webposter/6mygiant.jpg" style="margin-top: 20px; width: 70px; width: 70px; padding: 0px; border: 1px lightgray solid"></td>
+							<td style="font-family: verdana; text-align: left; font-size: 18px; padding-left: 20px; border-bottom: 1px lightgray solid">My Giant Nerd Boyfriend<p style="margin-left: 20px; font-size: 14px;" ><i>Wanderbar</i></p></td>
+						</tr>
+					</table>
+					</div>
+					<div class="inner-kiri">
+					<table class="tabble-genre" border="0">
+						<tr>
+							<td colspan="2" style="font-size: 18px; color: blue; text-align: left; padding-left: 100px; padding-bottom: 0px; padding-top: 10px; ">Slice of life</td>
+						</tr>
+						<tr class="comic-selected" onClick="window.location='home.html'" style="cursor: pointer;">
+							<td width="40%"><img alt="sample" src="Webposter/2murrz.jpg" style="width: 70px; width: 70px; padding: 0px; border: 1px lightgray solid"></td>
+							<td style="font-family: verdana; text-align: left; font-size: 18px; padding-left: 20px; border-bottom: 1px lightgray solid">Murrz<p style="margin-left: 20px; font-size: 14px" ><i>Chanyeol Park</i></p></td>
+						</tr>
+						<tr class="comic-selected" onClick="window.location='home.html'" style="cursor: pointer;">
+							<td width="40%"><img alt="sample" src="Webposter/3bluechair.jpg" style="margin-top: 20px;width: 70px; width: 70px; padding: 0px; border: 1px lightgray solid"></td>
+							<td style="font-family: verdana; text-align: left; font-size: 18px; padding-left: 20px; border-bottom: 1px lightgray solid">Blue Chair<p style="margin-left: 20px; font-size: 14px;" ><i>Minguk Song</i></p></td>
+						</tr>
+					</table>
+					</div>
+				</div>
+				<div id="comgenre">
+					<div class="inner-kanan">
+					<table class="tabble-genre" border="0">
+						<tr>
+							<td colspan="2" style="font-size: 18px; color: orange; text-align: left; padding-left: 100px; padding-bottom: 0px; padding-top: 10px;">Comedy</td>
+						</tr>
+						<tr class="comic-selected" onClick="window.location='home.html'" style="cursor: pointer;">
+							<td width="40%"><img alt="sample" src="Webposter/4eatfighter.jpg" style="width: 70px; width: 70px; padding: 0px; border: 1px lightgray solid"></td>
+							<td style="font-family: verdana; text-align: left; font-size: 18px; padding-left: 20px; border-bottom: 1px lightgray solid">Eat Fighter<p style="margin-left: 20px; font-size: 14px" ><i>Haera</i></p></td>
+						</tr>
+						<tr class="comic-selected" onClick="window.location='home.html'" style="cursor: pointer;">
+							<td width="40%"><img alt="sample" src="Webposter/5denma.jpg" style="width: 70px; width: 70px; padding: 0px; border: 1px lightgray solid"></td>
+							<td style="font-family: verdana; text-align: left; font-size: 18px; padding-left: 20px; border-bottom: 1px lightgray solid">Denma<p style="margin-top: 20px;margin-left: 20px; font-size: 14px" ><i>Yonggie</i></p></td>
+						</tr>
+					</table>
+					</div>
+					<div class="inner-kanan">
+					<table class="tabble-genre" border="0">	
+						<tr>
+							<td colspan="2" style="font-size: 18px; color: brown; text-align: left; padding-left: 100px; padding-bottom: 0px; padding-top: 10px;">Horror</td>
+						</tr>
+						<tr class="comic-selected" onClick="window.location='home.html'" style="cursor: pointer;" >
+							<td width="40%"><img alt="sample" src="Webposter/9sweet.jpg" style="width: 70px; width: 70px; padding: 0px; border: 1px lightgray solid"></td>
+							<td style="font-family: verdana; text-align: left; font-size: 18px; padding-left: 20px; border-bottom: 1px lightgray solid">Sweet Home<p style="margin-left: 20px; font-size: 14px" ><i>Maximillian</i></p></td>
+						</tr>
+						<tr class="comic-selected" onClick="window.location='home.html'" style="cursor: pointer;" >
+							<td width="40%"><img alt="sample" src="Webposter/10holy.jpg" style="width: 70px; width: 70px; padding: 0px; border: 1px lightgray solid"></td>
+							<td style="font-family: verdana; text-align: left; font-size: 18px; padding-left: 20px; border-bottom: 1px lightgray solid">Oh! Holy<p style="margin-top: 20px;margin-left: 20px; font-size: 14px" ><i>Kyung-A</i></p></td>
+						</tr>
+					</table>
+					</div>					
+				</div>
+				<div id="horgenre">
+					<div id="coba1">
+						<table class="tabble-genre1" border="0">
+							<tr>
+								<td colspan="2" style="font-size: 18px; color: orange; text-align: left; padding-left: 100px; padding-bottom: 0	px; padding-top: 10px;">Comedy</td>
+							</tr>
+							<tr class="comic-selected" onClick="window.location='home.html'" style="cursor: pointer;">
+								<td width="40%"><img alt="sample" src="Webposter/4eatfighter.jpg" style="width: 70px; width: 70px; padding: 0px; border: 1px lightgray solid"></td>
+								<td style="font-family: verdana; text-align: left; font-size: 18px; padding-left: 20px; border-bottom: 1px lightgray solid">Eat Fighter<p style="margin-left: 20px; font-size: 14px" ><i>Haera</i></p></td>
+							</tr>
+							<tr class="comic-selected" onClick="window.location='home.html'" style="cursor: pointer;">
+								<td width="40%"><img alt="sample" src="Webposter/5denma.jpg" style="width: 70px; width: 70px; padding: 0px; border: 1px lightgray solid"></td>
+								<td style="font-family: verdana; text-align: left; font-size: 18px; padding-left: 20px; border-bottom: 1px lightgray solid">Denma<p style="margin-top: 20px;margin-left: 20px; font-size: 14px" ><i>Yonggie</i></p></td>
+							</tr>
+						</table>
+					</div>
+					<div id="coba2">
+						<table class="tabble-genre2" border="0">	
+							<tr>
+								<td colspan="2" style="font-size: 18px; color: brown; text-align: left; padding-left: 100px; padding-bottom: 0px; padding-top: 10px;">Horror</td>
+							</tr>
+							<tr class="comic-selected" onClick="window.location='home.html'" style="cursor: pointer;" >
+								<td width="40%"><img alt="sample" src="Webposter/9sweet.jpg" style="width: 70px; width: 70px; padding: 0px; 	border: 1px lightgray solid"></td>
+								<td style="font-family: verdana; text-align: left; font-size: 18px; padding-left: 20px; border-bottom: 1px lightgray solid">Sweet Home<p style="margin-left: 20px; font-size: 14px" ><i>Maximillian</i></p></td>
+							</tr>
+							<tr class="comic-selected" onClick="window.location='home.html'" style="cursor: pointer;" >
+								<td width="40%"><img alt="sample" src="Webposter/10holy.jpg" style="width: 70px; width: 70px; padding: 0px; border: 1px lightgray solid"></td>
+								<td style="font-family: verdana; text-align: left; font-size: 18px; padding-left: 20px; border-bottom: 1px lightgray solid">Oh! Holy<p style="margin-top: 20px;margin-left: 20px; font-size: 14px" ><i>Kyung-A</i></p></td>
+							</tr>
+						</table>
+					</div>					
+				</div>
+				<div id="genlist">
+					<a href="allgenre.html"  title="CLICK HERE">More comics</a>	
+				</div>
+			</div>
+				
+		</div>
+		<footer id="footer">
+			<div class="copyright"><p align="center">Copyright &#169; 2018 Webteen Web Comic Inc. All right reserved</p></div>
+			<div class="contact"><img src="PNG/002-twitter.png"><a href="#">@Webteenwc</a><br><img src="PNG/001-facebook.png"><a href="#">Weebteen Web Comic</a></div>
+		</footer>
+	</div>
+</body>
+<script>
+
+window.onscroll = function() {myFunction()};
+
+var topnav = document.getElementById("topnav");
+var sticky = topnav.offsetTop;
+
+function myFunction() {
+	if (window.pageYOffset >= sticky) {
+    topnav.classList.add("sticky");
+ 	} else {
+    topnav.classList.remove("sticky");
+  	}
+}
+
+$("#ads > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#ads > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#ads');
+},  3000);
+
+$('#popcomic').click(function () {
+	$('body,html').animate({
+		scrollTop: 390
+	}, 800);
+	return false;
+});
+
+$('#genrecomic').click(function () {
+	$('body,html').animate({
+		scrollTop: 720
+	}, 800);
+	return false;
+});
+
+</script>
+</html>

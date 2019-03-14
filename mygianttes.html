@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bts_maintes.css">
+	<link href="w31063.css" rel="stylesheet" type="text/css">
+	<!-- <script src="js/bootstrap.min.js"></script> -->
+	<script src="tools/js/jquery.min.js"></script>
+	<script src="tools/js/angular.min.js"></script>
+	<title>Webteen - My Giant Nerd Boyfriend</title>
+</head>
+<body>
+	<div id="mainbody">
+		<div id="header" style="background: url(bg_new_bg.png);">
+			<div class="header-link">
+				<img src="logo/logo_trs3.png">
+			</div>
+		</div>
+		<div id="topnav">
+				<ul>
+					<li><a href="bts_home2.html">Back to Homepage</a></li>
+				</ul>
+		</div>
+			<div class="banner-comic">
+				<img id="banner" src="images/mgnb/bannermygiant.png">
+				<p class="comic-title">My Giant Nerd Boyfriend</p>
+				<p class="comic-author">Wanderbar</p>
+				<p class="desc">"A height difference of a foot and above might seem adorable to some, but it usually causes a lot of minor inconveniences."</p>
+			</div>
+			<div class="comic-eps">
+				<!-- <div id="solgenre">/ -->
+					<!-- <div class="row">						
+						<div class="col-md-12 col-xs-12" >
+							<!-- <div class="genre-list-cover"> -->
+								<!-- <img title="mgnb_1" src="images/mgnb/mgnb_2.png"/> -->
+							<!-- </div> -->
+						<!-- <div  title="Murrz"><p>Murrz</p></div>
+						</div>						
+					</div> -->
+				<!-- <br>
+					<div class="clear"></div> -->
+					
+				<!-- </div>/ -->
+					
+
+				<!-- <table class="episode" border="0">	
+							<tr class="comic-selected" onClick="window.location='mygiant_ep2.html'" style="cursor: pointer;" >
+								<td width="40%"><img alt="sample" src="images/mgnb/mgnb_2.png" style="width: 100px; width: 100px; padding: 0px; border: 1px lightgray solid"></td>
+								<td style="font-family: verdana; text-align: left; font-size: 20px; padding-left: 20px; border-bottom: 1px lightgray solid">Episode #2: Pikachu</td>
+							</tr>
+							<tr class="comic-selected" onClick="window.location='mygiant_ep1.html'" style="cursor: pointer;" >
+								<td width="40%"><img alt="sample" src="images/mgnb/mgnb_1.png" style="width: 100px; width: 100px; padding: 0px; border: 1px lightgray solid"></td>
+								<td style="font-family: verdana; text-align: left; font-size: 20px; padding-left: 20px; border-bottom: 1px lightgray solid">Episode #1: Weather</td>
+							</tr>
+				</table> -->
+				<div class="row">
+				  <div class="col-md-3 col-xs-3 col-md-offset-3 col-xs-offset-3"><img title="Murrz" style="width: 100px; padding: 0px; border: 1px lightgray solid; float: right;"  class="img-responsive" src="images/mgnb/mgnb_2.png"></div>
+				  <div class="col-md-3 col-xs-3" style="font-family: verdana; text-align: left; font-size: 20px; padding-left: 20px; border-bottom: 1px lightgray solid; height:50px; "><p></p></div>
+				</div>
+
+			</div>
+
+			<div id="comic-desc">
+				<p></p>
+			</div>
+			<div id="footer">
+
+			<div class="copyright">				
+				<p class="footer-company-name">Copyright &#169; 2018 Webteen Web Comic Inc. All right reserved</p>
+
+				<div class="footer-icons">
+					<a href="#"><img src="icon/002-twitter.png">Webteencomics</a>
+					<a href="#"><img src="icon/001-facebook.png">Webteencomics</a>
+					<a href="#"><img src="icon/envelope.png">help@webteen.in</a>
+				</div>
+			</div>
+			</div>
+	</div>
+
+</body>
+<script>
+window.onscroll = function() {myFunction()};
+
+var topnav = document.getElementById("topnav");
+var sticky = topnav.offsetTop;
+
+function myFunction() {
+	if (window.pageYOffset >= sticky) {
+    topnav.classList.add("sticky");
+ 	} else {
+    topnav.classList.remove("sticky");
+  	}
+}
+</script>
+</html>

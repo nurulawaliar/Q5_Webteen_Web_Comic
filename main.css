@@ -1,0 +1,982 @@
+body{
+	margin: 0;
+}
+#mainbody{
+	width: auto;
+	height: auto;
+	margin-left: auto;
+	margin-top: 2px;
+	margin-right: auto;
+}
+@font-face{
+	font-family: "alphabetizedct";
+	src:url('alphabetizedct.ttf');
+}
+@font-face{
+	font-family: "oct";
+	src:url('octin_spraypaint.ttf');
+}
+/*ini bagian HEADER*/
+header{
+	background: url(bg_new_bg.png) no-repeat;
+	height: 145px;
+	margin-top: -15px;
+	background-size: 100%;
+	z-index: 9999;
+}
+#logo img{
+	float: left;
+	margin-top: 10px;
+	width: 150px;
+	margin-left: 50px;
+}
+.header-link ul #left-link{
+	list-style-type: none;
+	float: left;
+}
+.header-link ul#left-link li{
+	display: inline;
+	font-family: alphabetizedct;
+	font-size: 27px;
+	padding-bottom: 10px;
+	padding-top: 5px;
+	padding-left: 20px;
+	float: left;
+}
+#left-link a{
+	text-decoration: none;
+	font-family: gabriola;
+	font-size: 50px;
+	font-weight: bold;
+	color: black;
+	margin-bottom: 10px;
+}
+/*ini bagian top navigasi*/
+#topnav{
+	background: lightblue;
+	top: 15px;
+	width: 100%;
+	height: 60px;
+	margin-top: -15px;
+	padding-bottom: 9px;
+	overflow: hidden;
+	z-index: 9999;	
+	box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+#topnav img{
+	float: right;
+	width: 60px;
+	padding-right: 5px;
+	margin-top: -5px;
+	margin-right: 30px;
+}
+
+#topnav button{
+	float: right;
+	margin-top: 5px;
+	margin-right: 30px;
+}
+#topnav ul{
+	list-style-type: none;
+	text-align: center;
+	background: black;
+	
+}
+#topnav li{
+	display: inline;
+	float: left;
+	margin-top: -2px;
+}
+
+#topnav a{
+	color: navy;
+	text-decoration: none;
+	font-weight: bold;
+	font-family:  alphabetizedct;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+#topnav a#wupdate:hover{
+	color: black;
+	background: salmon;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-decoration: none;
+	font-weight: bold;
+}
+#topnav a#popcomic:hover{
+	color: black;
+	background: burlywood;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-decoration: none;
+	font-weight: bold;
+}
+#topnav a#genrecomic:hover{
+	color: black;
+	background: plum;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/*#topnav a#wupdate:active{
+	color: white;
+	background: #4E95C8;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-decoration: none;
+	font-weight: bold;
+}*/
+
+/*------------------sticky navigation-----------*/
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+/*  width: 100%;
+  margin-top: -120px;*/
+}
+
+.sticky + .content {
+  padding-top: 0px;
+}
+/*ini main content*/
+#maincontent{
+	height: auto;
+}
+#maincontent .ads_rank{
+	height: auto;
+}
+/*ini bagian iklan*/
+#ads{
+	width: 70%;
+	height: 300px;
+	float: left;
+	margin-bottom: 0px;
+	margin-top: -300px;
+    position: relative; 
+    padding: 10px; 
+    /*background: ghostwhite;*/
+    background: azure;
+    z-index: 0;
+}
+#ads img{
+	width: 850px;
+	height: 270px;
+	margin-right: 30px;
+	margin-left: 30px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	opacity: 0.85;
+	padding-right: 10px;
+}
+#ads a:hover img{
+	opacity: 1.0;
+}
+
+#ads > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+}
+.ads_rank #rank{
+	width: 30%;
+	height: 300px;
+	float: right;
+	margin-bottom: 0px;
+	margin-top: -300px;
+	z-index: 0;
+	background: azure;
+	/*background: ghostwhite;*/
+}
+
+.table_rank{
+	margin-left: 40px;
+}
+.table_rank td#number{
+	font-size: 20px;
+	font-weight: bold;
+}
+.table_rank td img{
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+.table_rank td p{
+	font-family: Verdana;
+	font-size: 20px;
+	padding-left: 40px;
+}
+.table_rank td p:hover{
+	color: orange;
+}
+.table_rank a{
+	text-decoration: none;
+}
+.number1{
+	visibility: hidden;
+}
+.table_rank1{
+	margin-left: 40px;
+}
+.table_rank1 td#number{
+	font-size: 20px;
+	font-weight: bold;
+}
+.table_rank1 td img{
+	width: 50px;
+	height: 50px;
+	float: left;
+}
+.table_rank1 td p{
+	font-family: Verdana;
+	font-size: 20px;
+	padding-left: 40px;
+}
+.table_rank1 td p:hover{
+	color: orange;
+}
+.table_rank1 a{
+	text-decoration: none;
+}
+
+.recommendedcomic{
+	width: 100%;
+	height: auto;
+	background-color: whitesmoke;
+	height: auto;
+	margin-top: 300px;
+}
+.recommendedcomic p#rcm{
+	background: skyblue;
+	color: indianred;
+	font-family:  alphabetizedct;
+	font-size: 40px;
+	font-weight: bold;
+	padding-left: 60px;
+	margin-top: 0px;
+}
+.genrelist p#rcm{
+	background: skyblue;
+	color: indianred;
+	font-family:  alphabetizedct;
+	font-size: 40px;
+	font-weight: bold;
+	padding-left: 60px;
+	margin-top: 0px;
+}
+#rcmlist{
+	padding-top: 10px;
+	padding-bottom: 20px;
+	width: 90%;
+	text-align: center;
+	margin-left: 50px;
+	margin-right: 10px;
+}
+#rcmlist ul{
+	list-style-type: none;
+}
+#rcmlist li{
+	display: inline-block;
+}
+#rcmlist img{
+	width: 180px;
+	height: 180px;
+	margin-left: 0px;
+	margin-right: 10px;
+	z-index: 1;
+	box-shadow: 0 0 10px rgba(0,0,0,0.4); 
+}
+#rcmlist li a img{
+	display: block; 
+	opacity: 0.85;
+}
+#rcmlist li a:hover img{
+	opacity: 1.0;
+}
+.genrelist{
+	height: 580PX;
+}
+.genrelist p{
+	background: skyblue;
+	color: midnightblue;
+	font-family:  alphabetizedct;
+	font-size: 40px;
+	font-weight: bold;-
+	padding-left: 60px;
+	margin-top: 0px;
+}
+
+#romgenre{
+	width: 380px;
+	height: auto;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	margin-left: 5px;
+	float: left;
+}
+#romgenre p{
+	margin-left: 200px;
+	font-family: sans-serif;
+	font-size: 18px;
+}
+#romgenre img{
+	width: 70px;
+	height: 70px;
+	margin-left: 100px;
+	float: left;
+	box-shadow: 0 0 10px rgba(0,0,0,0.4); 
+}
+#romgenre a{
+	font-family: sans-serif;
+	font-size: 20px;
+	float: left;
+	padding-top: 5px;
+}
+#romgenre tr img{
+	display: block; 
+	opacity: 0.85;
+}
+#romgenre td:hover img{
+	opacity: 1.0;
+}
+#romgenre td:hover{
+	color: orange;
+}
+#romgenre td:hover p{
+	color: black;
+}
+#comgenre{
+	width: 380px;
+	height: auto;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	margin-right: 30px;
+	margin-left: 0px;
+	float: left;
+}
+#comgenre p{
+	margin-left: 200px;
+	font-family: sans-serif;
+	font-size: 18px;
+}
+#comgenre img{
+	width: 70px;
+	height: 70px;
+	margin-left: 100px;
+	float: left;
+	box-shadow: 0 0 10px rgba(0,0,0,0.4); 
+}
+#comgenre a{
+	font-family: sans-serif;
+	font-size: 20px;
+	float: left;
+	padding-top: 5px;
+}
+#comgenre tr img{
+	opacity: 0.85;
+}
+#comgenre td:hover img{
+	opacity: 1.0;
+}
+#comgenre td:hover{
+	color: orange;
+}
+#comgenre td:hover p{
+	color: black;
+}
+#horgenre{
+	width: 380px;
+	height: auto;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	margin-right: 60px;
+	margin-left: -30px;
+	float: left;
+}
+#horgenre p{
+	margin-left: 200px;
+	font-family: sans-serif;
+	font-size: 18px;
+}
+#horgenre img{
+	width: 70px;
+	height: 70px;
+	margin-left: 100px;
+	float: left;
+	box-shadow: 0 0 10px rgba(0,0,0,0.4); 
+}
+#horgenre a{
+	font-family: sans-serif;
+	font-size: 20px;
+	float: left;
+	padding-top: 5px;
+}
+#horgenre tr img{
+	opacity: 0.85;
+}
+#horgenre td:hover img{
+	opacity: 1.0;
+}
+#horgenre td:hover{
+	color: orange;
+}
+#horgenre td:hover p{
+	color: black;
+}
+a#genlist{
+	background: white;
+	font-family:  alphabetizedct;
+	font-size: 50px;
+	font-weight: bold;
+	color: red;
+	float: right;
+	margin-top: -15px;
+	margin-right: 40px;
+	display: block;
+}
+a#genlist:hover{
+	color: orange;
+}
+a#genlist img{
+	width: 40px;
+}
+/*.table_genre p{
+	margin-left: 200px;
+	font-family: sans-serif;
+	font-size: 18px;
+}
+.table_genre img{
+	width: 70px;
+	height: 70px;
+	margin-left: 100px;
+}*/
+/*#ads img{
+	width: 100%;
+	height: 320px;
+	padding-top: 10px;
+	padding-bottom: 30px;
+}
+.fade{
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s; 
+}
+@webkit-keyframes fade{
+	from{opacity: .4;}
+	to{opacity: 1}
+}
+@keyframes fade{
+	from{opacity: .4}
+	to{opacity: 1}
+}*/
+
+/*footer*/
+#footer{
+	height: 90px;
+	background: lightblue;
+}
+#footer img{
+	width: 25px;
+	padding-right: 10px;
+}
+.copyright{
+	font-family: alphabetizedct;
+	font-size: 25px;
+	padding-bottom: -3px;
+	padding-left: 60px;
+	float: left;
+}
+.contact{
+	float: right;
+	padding-right: 50px;
+	margin-top: -5px;
+}
+.contact a{
+	list-style-type: none;
+	display: inline;
+	text-decoration: none;
+	font-family: alphabetizedct;
+	font-size: 30px;
+	font-weight: bold;
+	color: black;
+}
+/*//mgnb*/
+.banner-comic{
+	background-color: #ff8399;
+	width: auto;
+	height: auto;
+}
+.banner-comic img{
+	height: 170px;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.comic-title{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	margin-top: -180px;
+	margin-left: 2%;
+	z-index: 1;
+	font-size: 26px;
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.comic-author{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	margin-top: -140px;
+	margin-left: 2%;
+	z-index: 1;
+	font-size: 22px;
+	color: #DD78D3;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.desc{
+	position: absolute;
+	width: 50%;
+	text-align: center;
+	margin-top: -80px;
+	margin-left: 25%;
+	z-index: 1;
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+#backarrow img{
+	width: 50px; 
+	height: 35px; 
+	margin-top: 5px;
+	margin-left: -10px;	
+	margin-right: 20px;
+}
+#nextarrow img{
+	width: 48px; 
+	height: 32px; 
+	margin-top: 5px;
+}
+#backarrow img:hover{
+	background-color: lightgray;
+}
+#nextarrow img:hover{
+	background-color: lightgray;
+}
+.comic-eps{
+	width: auto;
+	height: 600px;
+	margin-top: 10px;
+}
+.episode td{
+	padding-left: 270px;
+}
+#comic-pic{
+	background-color: white;
+	padding-left: 28%;
+	width: auto;
+	height: auto;
+}
+a#comic-title:hover{
+	color: darkorange;
+}
+
+#topnav a#romnav:hover{
+	color: black;
+	background: plum;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-decoration: none;
+	font-weight: bold;
+}
+#topnav a#solnav:hover{
+	color: black;
+	background: gold;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-decoration: none;
+	font-weight: bold;
+}
+#topnav a#comnav:hover{
+	color: black;
+	background: aquamarine;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-decoration: none;
+	font-weight: bold;
+}#topnav a#hornav:hover{
+	color: black;
+	background: gray;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-decoration: none;
+	font-weight: bold;
+}#topnav a#dranav:hover{
+	color: black;
+	background: khaki;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#romul li a img{  
+  opacity: 0.85;
+}
+#romul li a:hover img {     
+  /*border-color: #860f08; */    
+  opacity: 1.0; 
+}
+#soul li a img{  
+  opacity: 0.85;
+}
+#soul li a:hover img {     
+  /*border-color: #860f08; */    
+  opacity: 1.0; 
+}
+#comul li a img{  
+  opacity: 0.85;
+}
+#comul li a:hover img {     
+  /*border-color: #860f08; */    
+  opacity: 1.0; 
+}
+#horul li a img{  
+  opacity: 0.85;
+}
+#horul li a:hover img {     
+  /*border-color: #860f08; */    
+  opacity: 1.0; 
+}
+#draul li a img{  
+  opacity: 0.85;
+}
+#draul li a:hover img {     
+  /*border-color: #860f08; */    
+  opacity: 1.0; 
+}
+a:hover{
+  color: purple;
+}
+#comic-genre{
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "alphabetizedct";
+  top: 20px;
+}
+
+#genrelist ul{
+	padding: 0;
+	list-style-type: none;
+
+}
+#genrelist ul li{
+	display: inline-table;
+	border: 1px solid antiquewhite;
+	width: 200px;
+}
+#genrelist{
+	text-align: justify;
+	font-family: calibri;
+	margin-bottom: 50px;
+	margin-left: 100px;
+	margin-top: 100px;
+	font-size: 18px;
+	color: black;
+}
+#genrelist a{
+	text-decoration: none;
+}
+#genrelist p{
+	margin-top: 20px;
+	padding-right: 40px;
+	padding-left: 40px;
+}
+#genrelist img{
+	margin-top:0px;
+	width: 240px;
+	height: 240px;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2); 
+}
+#soul, #comul, #horul, #draul{
+	margin-top: 60px;
+}
+
+
+
+
+/*---------------------------this is comment box-------*/
+.container{
+	border: 1px solid linen;
+	background: snow;
+}
+section, form{
+	margin-left: 20%;
+	margin-right: 20%;
+}
+section.app-body ul li{
+	list-style-type: none;
+	font-family: alphabetizedct;
+	font-size: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------------bismillah, media 920------------------*/
+@media only screen and (max-width: 975px){
+
+#logo img{
+	float: left;
+	margin-top: 10px;
+	width: 100px;
+	margin-left: 50px;
+}
+.header-link ul#left-link li{
+	font-size: 25px;
+}
+#left-link a{
+	font-size: 40px;
+}
+#maincontent .ads_rank{
+	height: 311px;
+	margin-top: 300px;
+}
+#ads{
+	width: 100%;
+}
+#ads img{
+	width: 850px;
+	margin-left: 20px;
+	float: left;
+}
+.ads_rank #rank{
+	border: 1px solid blue;
+	margin-top: 10px;
+	float: left;
+	width: 100%;
+}
+.recommendedcomic{
+	margin-top: 0px;
+}
+#rcmlist img{
+	margin-top: 20px; 
+}
+#romgenre{
+	width: 45%;
+	margin-top: -30px;
+}
+#comgenre{
+	width: 45%;
+	margin-top: -30px;
+}
+/*#horgenre{
+	visibility: hidden;
+}*/
+/*tr.number2{
+	width: 45%;
+}*/
+tr.number1{
+	visibility: visible;
+/*	width: 45%;*/
+	float: right;
+	margin-top: -230px;
+	padding-right: 20px;
+}
+#footer{
+	left: 0;
+	bottom: 0;
+	top: 0;
+}
+/*#footer p{
+	margin-top: -300px;
+}
+.contact{
+	margin-top: -325px;
+}*/
+.genrelist{
+	height: 850px;
+}
+#ads{
+	width: 100%;
+	height: auto;
+	float: left;
+	margin-bottom: 0px;
+	margin-top: -300px;
+    position: relative; 
+    padding: 10px; 
+    background: ghostwhite;
+    z-index: 0;
+}
+#topnav p{
+	visibility: hidden;
+}
+#topnav img{
+	margin-right: -70px;
+}
+#comic-pic img{
+	width: 500px;
+	height: 550px;
+}
+}
+/*--------------------------------------------------------------------------------bismillah, media 1220------------------*/
+@media only screen and (max-width: 1220px){
+#coba1{
+	float: left;
+	margin-left: -370px;
+	margin-top: 10px;
+	/*margin-right: 60px;*/
+	/*width: 90%;*/
+}
+#coba2{
+	float: left;
+	margin-left: 30px;
+	margin-top: -200px;
+	/*width: 90%;*/
+}
+#footer{
+	left: 0;
+	bottom: 0;
+	top: 0;
+}
+tr.number1{
+	visibility: visible;
+/*	width: 45%;*/
+	float: right;
+	margin-top: -230px;
+	padding-right: 20px;
+}
+#genlist{
+	display: block;
+	float: left;
+}
+#ads img{
+	width: 100%;
+	margin-left: 20px;
+	float: left;
+	height: 250px;
+}
+.genrelist{
+	height: 850px;
+}
+#genrelist img{
+	margin-top:0px;
+	width: 200px;
+	height: 200px;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#topnav p{
+	visibility: hidden;
+}
+#topnav img{
+	margin-right: -110px;
+}
+#comic-pic img{
+	width: 550px;
+	height: 600px;
+}
+#backarrow img{
+	width: 50px; 
+	height: 35px; 
+	margin-top: 5px;
+	margin-left: -10px;	
+	margin-right: 20px;
+}
+}
+/*-----------------------------------------------------------------------------bismillah, media 750------------------*/
+@media only screen and (max-width: 750px){
+#coba1{
+	float: left;
+	width: 90%;
+	margin-left: 30px;
+	margin-top: 10px;
+}
+#coba2{
+	float: right;
+	width: 50%;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+#genrelist img{
+	margin-top:0px;
+	width: 200px;
+	height: 200px;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#topnav a{
+	color: navy;
+	text-decoration: none;
+	font-weight: bold;
+	font-family:  alphabetizedct;
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+p.desc{
+	font-size: 12px;
+}
+table.episode{
+	margin-left: -60px;
+}
+#comic-pic img{
+	width: 400px;
+	height: 480px;
+}
+#nextarrow img{
+	width: 48px; 
+	height: 32px; 
+	margin-top: 5px;
+	margin-left: 0px;
+}
+}
+
+col-md-3 col-xs-12 genre-list-cover
+ col-md-6 col-xs-12 genre-list-name

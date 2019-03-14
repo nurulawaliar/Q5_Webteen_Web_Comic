@@ -1,0 +1,808 @@
+body{
+	margin: 0;
+}
+@font-face{
+	font-family: "alphabetizedct";
+	src:url('font/alphabetizedct.ttf');
+}
+@font-face{
+	font-family: "sundaycomics";
+	src:url('font/sundaycomics1.ttf');
+}
+#mainbody{
+	width: auto;
+	height: auto;
+}
+#header{
+	width: 100%;
+	height: 145px;
+	background: url(images/ads/bg_new_bg.png) no-repeat;
+	background-size: 100%;
+	z-index: 9999;
+}
+.header-link img{
+	width: 160px;
+	margin-left: 70px;
+	margin-top: 10px;
+	z-index: 1;
+}
+/*.header-link ul #left-link{
+	list-style-type: none;
+	float: left;
+}
+.header-link ul#left-link li{
+	display: inline;
+}
+#left-link a{
+	text-decoration: none;
+	display: inline;
+	font-family: gabriola;
+	font-size: 55px;
+	font-weight: bold;
+	float: left;
+	margin-top: 22px;
+	margin-left: 40px;
+	text-shadow: -1px 0 black, 0 1px white, 1px 0 white, 0 -1px white;
+}
+#left-link i{
+	text-decoration: none;
+	font-family: gabriola;
+	font-size: 25px;
+	font-weight: bold;
+	color: black;
+	float: left;
+	margin-left: -50px;
+	margin-top: 55px;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}*/
+#topnav{
+	height: 60px;
+	background: lightblue;
+	top: 0px;
+	width: 100%;
+	/*height: 60px;*/
+	padding-bottom: 9px;
+	overflow: hidden;
+	z-index: 9999;	
+	box-shadow: 0 0 20px rgba(0,0,0,0.4);
+	/*margin-top: -15px;*/
+}
+#topnav ul{
+	list-style-type: none;
+	text-align: center;
+	background: black;	
+}
+#topnav li{
+	display: inline;
+	float: left;
+}
+#topnav a{
+	color: navy;
+	text-decoration: none;
+	font-weight: bold;
+	font-family: alphabetizedct;
+	font-size: 35px;
+	font-weight: bold;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+#topnav a#wupdate:hover{
+	color: black;
+	background: peachpuff;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+#topnav a#wpopular:hover{
+	color: black;
+	background: mistyrose;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+#topnav a#wgenre:hover{
+	color: black;
+	background: peachpuff;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+/*------------------sticky navigation-----------*/
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  /*position: fixed;*/
+  position: sticky;
+/*  width: 100%;
+  margin-top: -120px;*/
+}
+
+.sticky + .content {
+  padding-top: 0px;
+}
+#maincontent{
+	height: auto;
+}
+
+/*----------------------------ads & rank------------*/
+#nomorrank{
+	font-size: 20px;
+	color: black;
+	padding-top: 15px;
+	padding-bottom: 20px;
+	font-family: Haettenschweiler
+}
+.gambar{
+	text-align: center; 
+	padding-top: 10px; 
+	padding-bottom: 10px;
+}
+.namarank{
+	 font-size: 20px; 
+	 color: black;
+	 padding-top: 15px;
+	 padding-bottom: 20px; 
+	 font-family: Haettenschweiler;
+}
+
+
+/*-----------------------ini wupdate comic*/
+#wupdatecomic{
+	background: aliceblue;
+}
+p#wupdate-title{
+	font-family: alphabetizedct;
+	font-size: 28px;
+	font-weight: bold;
+	color: black;
+	float: left;
+}
+
+div[id^="wupdate-list"]{
+	/*margin-left: 90px;*/
+	font-family: alphabetizedct;
+	font-size: 30px;
+	font-weight: bold;
+}
+div[id^="-comic"]{
+	margin-left: 20px;
+}
+div[id^="wupdate-show"] ul{
+	list-style-type: none;
+}
+div[id^="wupdate-show"] li{
+	display: inline-block;
+}
+div[id^="wupdate-show"] img{
+	width: 60px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	z-index: 1;
+	box-shadow: 0 0 10px rgba(0,0,0,0.4); 
+}
+div[id^="wupdate-show"] li a img{
+	display: block; 
+	opacity: 0.85;
+}
+div[id^="wupdate-show"] li a:hover img{
+	opacity: 1.0;
+}
+
+/*-----------------------ini wupdate comic*/
+/*#mon-comic{
+	margin-left: -10px;
+}*//*#wupdate-list-mon{
+	margin-left: 90px;
+	font-family: alphabetizedct;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#wupdate-show-mon ul{
+	list-style-type: none;
+}
+#wupdate-show-mon li{
+	display: inline-block;
+}
+#wupdate-show-mon img{
+	width: 70px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	z-index: 1;
+	box-shadow: 0 0 10px rgba(0,0,0,0.4); 
+}
+#wupdate-show-mon li a img{
+	display: block; 
+	opacity: 0.85;
+}
+#wupdate-show-mon li a:hover img{
+	opacity: 1.0;
+}*/
+/*-----------------------ini wupdate comic*/
+/*#tue-comic{
+	margin-left: 10px;
+	padding-left: -10px;
+}*//*#wupdate-list-tue{
+	margin-left: 90px;
+	font-family: alphabetizedct;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#wupdate-show-tue ul{
+	list-style-type: none;
+}
+#wupdate-show-tue li{
+	display: inline-block;
+}
+#wupdate-show-tue img{
+	width: 70px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	z-index: 1;
+	box-shadow: 0 0 10px rgba(0,0,0,0.4); 
+}
+#wupdate-show-tue li a img{
+	display: block; 
+	opacity: 0.85;
+}
+#wupdate-show-tue li a:hover img{
+	opacity: 1.0;
+}*/
+
+/*-----------------------ini recommended comic*/
+.recommendedcomic{
+	width: 100%;
+	height: auto;
+	background-color: whitesmoke;
+	height: auto;
+/*	margin-top: 300px;*/
+}
+.recommendedcomic p#rcm{
+	background: skyblue;
+	color: indianred;
+	font-family:  alphabetizedct;
+	font-size: 40px;
+	font-weight: bold;
+	padding-left: 60px;
+	margin-top: 0px;
+}
+#rcmlist{
+	margin-top: 40px;
+	/*padding-bottom: 20px;*/
+	margin-left: 40px;
+	width: 100%;
+}
+#rcmlist ul{
+	list-style-type: none;
+}
+#rcmlist li{
+	display: inline-block;
+}
+#rcmlist img{
+	width: 180px;
+	height: 180px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	z-index: 1;
+	box-shadow: 0 0 10px rgba(0,0,0,0.4); 
+}
+#rcmlist li a img{
+	display: block; 
+	opacity: 0.85;
+}
+#rcmlist li a:hover img{
+	opacity: 1.0;
+}
+p#rcm{
+	background: skyblue;
+	color: indianred;
+	font-family:  alphabetizedct;
+	font-size: 40px;
+	font-weight: bold;
+	padding-left: 60px;
+	margin-top: 0px;
+}
+.genre-list-title{
+	background-color: lightgray;
+	box-shadow: 0 0 20px rgba(0,0,0,0.4);
+	margin-top: 20px;
+	height: 105px;
+}
+.genre-list-title p{
+	font-family: alphabetizedct;
+	font-size: 30px;
+	font-weight: bold;
+	padding-left: 30%;
+	margin-top: 40px;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+	
+}
+.genre-list-cover img{
+	width: 100px;
+	float: left;
+	margin-top: 20px;
+	box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+.genre-list-name{
+	float: left;
+	font-family: alphabetizedct;
+	font-size: 28px;
+	font-weight: bold;
+	margin-top: 30px;
+	margin-left: 20px;
+}
+/*footer*/
+#footer{
+	/*height: 130px;*/
+	background: lightblue;
+	color: navy;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+#footer img{
+	width: 30px;
+	padding-right: 10px;
+
+}
+.copyright{
+	font-family: cambria;
+	font-size: 17px;
+	/*margin-top: 40px;*/
+	/*padding-bottom: -3px;*/
+	padding-left: 20px;
+	float: left;
+	font-weight: bold;
+}
+.footer-icons a{
+	font-family: alphabetizedct;
+	font-size: 25px;
+	color: black;
+}
+.footer-icons img{
+	margin-left: 20px;
+}
+/*ini all genre*/
+#topnav a#romnav:hover{
+	color: black;
+	background: plum;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-decoration: none;
+	font-weight: bold;
+}
+#topnav a#solnav:hover{
+	color: black;
+	background: gold;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-decoration: none;
+	font-weight: bold;
+}
+#topnav a#comnav:hover{
+	color: black;
+	background: aquamarine;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-decoration: none;
+	font-weight: bold;
+}#topnav a#hornav:hover{
+	color: black;
+	background: gray;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-decoration: none;
+	font-weight: bold;
+}#topnav a#dranav:hover{
+	color: black;
+	background: khaki;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-decoration: none;
+	font-weight: bold;
+}
+#comic-genre{
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "alphabetizedct";
+  top: 20px;
+  color: black;
+}
+#romul li a img{  
+  opacity: 0.85;
+}
+#romul li a:hover img {     
+  /*border-color: #860f08; */    
+  opacity: 1.0; 
+}
+#soul li a img{  
+  opacity: 0.85;
+}
+#soul li a:hover img {     
+  /*border-color: #860f08; */    
+  opacity: 1.0; 
+}
+#comul li a img{  
+  opacity: 0.85;
+}
+#comul li a:hover img {     
+  /*border-color: #860f08; */    
+  opacity: 1.0; 
+}
+#horul li a img{  
+  opacity: 0.85;
+}
+#horul li a:hover img {     
+  /*border-color: #860f08; */    
+  opacity: 1.0; 
+}
+#draul li a img{  
+  opacity: 0.85;
+}
+#draul li a:hover img {     
+  /*border-color: #860f08; */    
+  opacity: 1.0; 
+}
+#genrelist ul{
+	padding: 0;
+	list-style-type: none;
+
+}
+#genrelist ul li{
+	display: inline-table;
+	border: 1px solid antiquewhite;
+	width: 200px;
+}
+#genrelist{
+	text-align: justify;
+	font-family: calibri;
+	margin-bottom: 50px;
+	margin-left: 100px;
+	margin-top: 100px;
+	font-size: 18px;
+	color: black;
+}
+#genrelist a{
+	text-decoration: none;
+}
+#genrelist p{
+	margin-top: 20px;
+	padding-right: 40px;
+	padding-left: 40px;
+}
+#genrelist img{
+	margin-top:0px;
+	width: 240px;
+	height: 240px;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2); 
+}
+#soul, #comul, #horul, #draul{
+	margin-top: 60px;
+}
+/*//mgnb*/
+.banner-comic{
+	background-color: #ff8399;
+	width: auto;
+	height: auto;
+}
+.banner-comic img{
+	height: 170px;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.comic-title{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	margin-top: -180px;
+	margin-left: 2%;
+	z-index: 1;
+	font-size: 26px;
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.comic-author{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	margin-top: -140px;
+	margin-left: 2%;
+	z-index: 1;
+	font-size: 22px;
+	color: #DD78D3;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.desc{
+	position: absolute;
+	width: 50%;
+	text-align: center;
+	margin-top: -80px;
+	margin-left: 25%;
+	z-index: 1;
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+#backarrow img{
+	width: 50px; 
+	height: 35px; 
+	margin-top: 5px;
+	margin-left: -10px;	
+	margin-right: 20px;
+}
+#nextarrow img{
+	width: 48px; 
+	height: 32px; 
+	margin-top: 5px;
+}
+#backarrow img:hover{
+	background-color: lightgray;
+}
+#nextarrow img:hover{
+	background-color: lightgray;
+}
+.comic-eps{
+	width: auto;
+	height: 600px;
+	margin-top: 10px;
+}
+.episode td{
+	padding-left: 270px;
+}
+#comic-pic{
+	background-color: white;
+	text-align: center;
+	/*padding-left: 28%;*/
+	width: auto;
+	height: auto;
+}
+a#comic-title:hover{
+	color: darkorange;
+}
+/*---------------------------this is comment box-------*/
+.container{
+	border: 1px solid linen;
+	background: snow;
+}
+section, form{
+	margin-left: 20%;
+	margin-right: 20%;
+}
+section.app-body ul li{
+	list-style-type: none;
+	font-family: alphabetizedct;
+	font-size: 40px;
+}
+
+
+
+@media only screen and (max-width: 767px){
+
+.genre-list-cover img{
+	width: 70px;
+	margin-left: 30px;
+}
+}
+
+@media screen and (min-width: 990px){
+	#comicrank{
+		font-size: 40px;
+		font-weight: bold;
+	}
+	#nomorrank{
+		text-align: center;
+		font-size: 30px;
+	}
+	.foto{
+		width: 70px !important;
+		padding-top: 0px;
+		padding-left: 10px;
+		text-align: center;
+	}
+	.namarank{
+		/*text-align: center;*/
+	}
+}
+@media screen and (max-width: 990px){
+	#comicrank{
+		font-size: 40px;
+		font-weight: bold;
+	}
+	#nomorrank{
+		text-align: center;
+		font-size: 30px;
+	}
+	.foto{
+		width: 70px !important;
+		padding-top: 0px;
+		padding-left: 10px;
+		text-align: center;
+	}
+	.namarank{
+		text-align: center;
+	}
+} 
+@media screen and (max-width: 590px){
+	#comicrank{
+		font-size: 100%;
+		color: black; 
+		padding-left: 50px;
+		padding-top: 10px;
+		padding-bottom: 0px;
+		font-family: Haettenschweiler;
+		/*font-family: alphabetizedct;*/
+		font-weight: bold;
+	}
+	
+	#nomorrank{
+		text-align: center;
+		font-size: 100%;
+		padding-top: 5px;
+		padding-bottom: 10px;
+		font-family: Haettenschweiler;
+	}
+	.foto{
+		width: 100% !important;
+		padding-top: 0px; 
+		padding-bottom: 0px;
+	}
+	.namarank{
+	 	font-size: 18px; 
+	 	color: black;
+	 	padding-top: 5px;
+	 	padding-bottom: 10px; 
+	 	font-family: Haettenschweiler;
+}
+}
+@media screen and (max-width: 320px){
+	#comicrank{
+		font-size: 100%;
+		color: black; 
+		padding-left: 50px;
+		padding-top: 10px;
+		padding-bottom: 0px;
+		font-family: Haettenschweiler;
+		font-weight: bold;
+		/*font-family: alphabetizedct;*/
+	}	
+	#nomorrank{
+		text-align: center;
+		font-size: 100%;
+		padding-top: 5px;
+		padding-bottom: 10px;
+		font-family: Haettenschweiler;
+	}
+	.foto{
+		width: 35px !important;
+		padding-top: 0px; 
+		padding-bottom: 0px;
+	}
+	.namarank{
+	 	font-size: 18px; 
+	 	color: black;
+	 	padding-top: 5px;
+	 	padding-bottom: 10px; 
+	 	font-family: Haettenschweiler;
+}
+}
+
+ .swiper-container {
+      width: 100%;
+      height: 100%;
+      /*height: 203px;*/
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+/*.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+*/
+
+/*xs*/
+
+
+/*sm*/
+/*md*/
+/*lg*/
+/*
+
+.block {
+	width: 180px;
+	height: 180px;
+}
+
+.red {background: red;}
+
+.blue {background: blue;}
+
+.green {background: green;}
+
+.yellow {background: yellow;}
+
+*/
+
+/*img{
+  width:100%;
+  max-width:100%;
+}*/
+
+.navbar{
+  position:fixed;
+  width:100%;
+  background-color:#fff;
+  z-index:10;
+  border-radius:0;
+  border-color:transparent;
+}
+.navbar-default .navbar-nav > li > a{
+  color:#000;
+  
+}
+
+#romgenre p:hover{
+	color: blue;
+}
+
+.tengah{
+	text-align: center;
+}
+
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+    z-index: 9999;
+}
+

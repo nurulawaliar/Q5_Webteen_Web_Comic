@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Webteen - Web Comic</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="bts_maintes.css">
+	<link href="w31063.css" rel="stylesheet" type="text/css">
+	<script src="tools/js/bootstrap.min.js"></script>
+	<script src="tools/js/jquery.min.js"></script>
+	<script src="tools/js/angular.min.js"></script>
+</head>
+<body style="background-color: lightblue;">
+		<div id="header" style="background: url(bg_new_bg.png);">
+			<div class="header-link">
+				<img src="logo/logo_trs3.png">
+			</div>
+		</div>
+		<div id="topnav">
+				<ul class="allgenrenav">
+					<li><a href="#romul" id="romnav">ROMANCE</a></li>
+					<li><a href="#soul" id="solnav">SLICE OF LIFE</a></li>
+					<li><a href="#comul" id="comnav">COMEDY</a></li>
+					<li><a href="#horul" id="hornav">HORROR</a></li>
+					<li><a href="#draul" id="dranav">DRAMA</a></li>
+				</ul>
+		</div>
+		<div id="maincontent">
+			<div id="genrelist">
+				<ul id="romul">
+					<span id="comic-genre">ROMANCE</span><br>	
+					<li>
+						<a href="mygiant.html"><img src="images/Webposter/6mygiant.jpg"/>
+						<center><b>My Giant Nerd Boyfriend</a>
+						</b>
+					</li>
+					<li>
+						<a href="#"><img src="images/Webposter/11truebeauty.jpg"/>
+						<center><b>True Beauty</a>
+						</b>
+					</li>
+				</ul>
+				<ul id="soul">
+					<span id="comic-genre">SLICE OF LIFE</span><br>	
+					<li>
+						<a href="#"><img src="images/Webposter/2murrz.jpg"/>
+						<center><b>Murrz</a></b>
+					</li>
+					<li>
+						<a href="#"><img src="images/Webposter/3bluechair.jpg"/>
+						<center><b>Blue Chair</a>
+						</b>
+					</li>
+				</ul>
+				<ul id="comul">
+					<span id="comic-genre">COMEDY</span><br>	
+					<li>
+						<a href="#"><img src="images/Webposter/4eatfighter.jpg"/>
+						<center><b>Eat Fighter</a></b>
+					</li>
+					<li>
+						<a href="#"><img src="images/Webposter/5denma.jpg"/>
+						<center><b>Denma</a>
+						</b>
+					</li>
+				</ul>
+				<ul id="horul">
+					<span id="comic-genre">HORROR</span><br>	
+					<li>
+						<a href="#"><img src="images/Webposter/9sweet.jpg"/>
+						<center><b>Sweet Home</a></b>
+					</li>
+					<li>
+						<a href="#"><img src="images/Webposter/12showdown!.jpg"/>
+						<center><b>Show Down!</b></center>
+					</li>
+				</ul>
+				<ul id="draul">
+					<span id="comic-genre">DRAMA</span><br>	
+					<li>
+						<a href="#"><img src="images/Webposter/4eatfighter.jpg"/>
+						<center><b>Eat Fighter</a></b>
+					</li>
+					<li>
+						<a href="#"><img src="images/Webposter/5denma.jpg"/>
+						<center><b>Denma</a>
+						</b>
+					</li>
+				</ul>
+			</div>
+			<a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+			<div class="row container-fluid" id="footer">
+				<div class="copyright col-md-6 col-xs-12">				
+					<p class="footer-company-name">Copyright &#169; 2018 Webteen Web Comic Inc. All right reserved</p>
+				</div>
+				<div class="footer-icons col-md-6 col-xs-10">
+					<a href="#"><img src="icon/002-twitter.png">Webteencomics</a>
+					<a href="#"><img src="icon/001-facebook.png">Webteencomics</a>
+					<a href="#"><img src="icon/envelope.png">help@webteen.in</a>
+				</div>
+			</div>
+</body>
+<script>
+
+window.onscroll = function() {myFunction()};
+
+var topnav = document.getElementById("topnav");
+var sticky = topnav.offsetTop;
+
+function myFunction() {
+	if (window.pageYOffset >= sticky) {
+    topnav.classList.add("sticky");
+ 	} else {
+    topnav.classList.remove("sticky");
+  	}
+}
+
+$('#romnav').click(function () {
+	$('body,html').animate({
+		scrollTop: 235
+	}, 800);
+	return false;
+});
+$('#solnav').click(function () {
+	$('body,html').animate({
+		scrollTop: 600
+	}, 800);
+	return false;
+});
+$('#comnav').click(function () {
+	$('body,html').animate({
+		scrollTop: 965
+	}, 800);
+	return false;
+});
+$('#hornav').click(function () {
+	$('body,html').animate({
+		scrollTop: 1330
+	}, 800);
+	return false;
+});
+$('#dranav').click(function () {
+	$('body,html').animate({
+		scrollTop: 1695
+	}, 800);
+	return false;
+});
+
+$(document).ready(function(){
+     $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+            $('#back-to-top').tooltip('hide');
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+        
+        $('#back-to-top').tooltip('show');
+
+});
+</script>
+</html>
